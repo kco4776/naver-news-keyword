@@ -29,7 +29,7 @@ where <target_date> is the target date in the format YYYYMMDD and <gap> is the n
 The crawler extracts articles from three news sites: ```이데일리, 뉴스1, 서울경제```
 
 ## Contributing
-If you want to contribute to this project, please fork the repository and create a pull request. Make sure to describe your changes and follow the code style guidelines.
+If you want to contribute to this project, please fork the repository and create a pull request.
 
 ## License
 This project is licensed under the MIT License.
