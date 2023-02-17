@@ -1,7 +1,7 @@
 # Naver Economic News Crawler and Keyword Extractor
 This project is a Python-based web crawler that searches for news articles related to the economy and extracts keywords from them.
 
-한글과 영어```가-힣a-zA-Z```를 제외한 모든 문자를 제거 합니다. [soynlp](https://github.com/lovit/soynlp)의 비지도학습을 통해 명사들만을 추출한후 trg_date에 대한 ref_date들의 단어 출현 확률을 기반으로 키워드를 정의합니다. 
+한글과 영어(```가-힣a-zA-Z```)를 제외한 모든 문자를 제거 합니다. [soynlp](https://github.com/lovit/soynlp)의 비지도학습을 통해 명사들만을 추출한후 trg_date에 대한 ref_date들의 단어 출현 확률을 기반으로 키워드를 정의합니다. 
 자세한 내용은 [이곳](https://github.com/lovit/soykeyword/blob/master/tutorials/keyword_extraction_using_proportion_ratio.ipynb)에 있습니다.
 
 ## Requirements
