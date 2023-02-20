@@ -24,9 +24,9 @@ def main(args):
                 ref_docs += cleansing(df)
 
     keywords = extraction(trg_docs, ref_docs)
-    print('-'*5+'KEYWORDS'+'-'*5)
-    for keyword in keywords:
-        print(keyword.word)
+    print('-'*5+f'{now.strftime("%Y-%m-%d")} KEYWORDS'+'-'*5)
+    for i, keyword in enumerate(keywords):
+        print(f'{i+1}: {keyword.word.strip()}')
 
 
 if __name__ == '__main__':
