@@ -28,7 +28,8 @@ def extraction(trg, ref):
     tokenizer = LTokenizer(scores=combined_scores)
 
     crp_ext = CorpusbasedKeywordExtractor(
-        tokenize=lambda x: [tok for tok in tokenizer.tokenize(x) if tok in nouns]
+        tokenize=lambda x: [tok for tok in tokenizer.tokenize(x)
+                            if tok in nouns and len(tok) > 1]
     )
     crp_ext.train(total)
     keywords = crp_ext.extract_from_docs(trg_idx)
